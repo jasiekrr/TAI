@@ -1,0 +1,1 @@
+declare const ChessBoard:any;

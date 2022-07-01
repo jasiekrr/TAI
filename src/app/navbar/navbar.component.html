@@ -14,4 +14,6 @@
   <a mat-button routerLink="Hot">Hot seat</a>
   <a mat-button routerLink="Multiplayer">Multiplayer</a>
   <a mat-raised-button color="accent" routerLink="account">My account</a>
+  <app-auth-button *ngIf="(auth.isAuthenticated$ | async) === false"></app-auth-button>
+  <app-logout-button *ngIf="(auth.isAuthenticated$ | async)"></app-logout-button>
 </mat-toolbar>
